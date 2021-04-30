@@ -37,6 +37,9 @@
         <router-view></router-view>
       </Content>
       <Footer>
+        <BackTop :height="100" :bottom="100">
+          <Icon type="md-arrow-round-up" style="color: #6882d6; font-size:36px;" />
+    </BackTop>
         <Row type="flex" justify="space-around">
           <div class="Footer">
             <ul style="font-size: 18px; list-style-type: none">
@@ -102,6 +105,7 @@ export default {
     display: block;
     display: flex;
     flex-direction: column;
+    align-items: center;
     width: 100%;
   }
 }
